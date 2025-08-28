@@ -44,7 +44,10 @@ clean_objects:
 clean_pdfs:
 	rm -f bin/*.pdf
 
-clean: clean_objects clean_pdfs
+clean_tests:
+	rm -rf build/
+
+clean: clean_objects clean_pdfs clean_tests
 
 build: CMakeLists.txt test/CMakeLists.txt
 	cmake -S . -B ./build;
