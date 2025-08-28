@@ -1,8 +1,11 @@
 #include <gtest/gtest.h>
 
-#include "../include/placeholder.h"
+extern "C" {
+	#include "../include/queue.h"
+}
 
-TEST (TestSuite, FirstTest) {
+
+TEST (TestSuiteQ, FirstTest) {
 
   EXPECT_EQ(1, 1);
 }

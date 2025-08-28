@@ -16,6 +16,10 @@ bin/*.obj
 **/*.PDF
 **/vgcore.*
 **/.DS_Store
+**/core*
+**/*.out
+**/*.err
+
 
 # User-specific files
 *.rsuser

@@ -3,7 +3,7 @@
 cmake_minimum_required(VERSION 3.0)
 
 # Name SampleClass needs to match one of the Source names in Sources.
-set(This TestSuite)
+set(This TestSuiteQ)
 
 project(${This} C CXX)
 set(CMAKE_C_STANDARD 99)
@@ -16,11 +16,11 @@ enable_testing()
 add_subdirectory(googletest)
 
 set (Headers
-    include/placeholder.h
+    include/queue.h
 )
 
 set (Sources
-    src/main.cpp
+    src/queue.c
 )
 
 add_library(${This} STATIC ${Sources} ${Headers})
