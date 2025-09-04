@@ -15,6 +15,7 @@
 
 #include <stdbool.h>
 #include <stdlib.h> // size_t
+#include <stdio.h>
 
 //*************************************************************************
 // Error reporting functions
