@@ -1,10 +1,24 @@
+/**************************************************************************
+ File name:  UnitTests.cpp
+ Author:     Computer Science, Pacific University
+ Date:			 9.9.16
+ Class:			 CS300
+ Assignment: Queue
+ Purpose:    Unit Test for the Queue
+ *************************************************************************/
+
 #include <gtest/gtest.h>
 
 extern "C" {
 	#include "../include/queue.h"
 }
 
-
+//***************************************************************************
+// Test:    		Test_FirstTest
+//
+// Description: Demonstrate how to write test, use EXPECT_EQ, and <<
+//
+//***************************************************************************
 TEST (TestSuiteQ, Test_FirstTest) {
 
   EXPECT_EQ(1, 1);
