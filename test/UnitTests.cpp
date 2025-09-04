@@ -5,7 +5,7 @@ extern "C" {
 }
 
 
-TEST (TestSuiteQ, FirstTest) {
+TEST (TestSuiteQ, Test_FirstTest) {
 
   EXPECT_EQ(1, 1);
 }

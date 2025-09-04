@@ -24,9 +24,6 @@ all: clean_objects ${TARGETS}
 bin/queue.o: src/queue.c include/queue.h
 	${CC} -o bin/queue.o src/queue.c -c ${CFLAGS} 
 
-valgrind: all
-	valgrind ${VALGRIND_FLAGS} bin/queuetester
-	
 printAll:
 	@#enscript ${ENSCRIPT_FLAGS} -Emakefile  Makefile  | ps2pdf - bin/Makefile.pdf
 	enscript ${ENSCRIPT_FLAGS} -Ec src/queue.c  | ps2pdf - bin/queue.pdf
